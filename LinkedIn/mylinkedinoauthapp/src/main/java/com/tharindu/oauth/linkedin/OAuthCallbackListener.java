@@ -55,6 +55,8 @@ public class OAuthCallbackListener extends HttpServlet {
 
             } catch (ParseException e) {
                 // Handle exception
+
+		System.out.println("ERROR: " + e.getMessage());
             }
 
             Map<String, String> requestHeaders = new HashMap<String, String>();
